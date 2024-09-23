@@ -53,7 +53,7 @@ ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
 
 /* TYPE TEXT ANIMATION */
 var typed = new Typed('.multiple-text', {
-    strings: ["FullStack Web developer", "Competitive Programmer", "Open Source Contributor", "Tech Content Writer", "Ai Trainer","Prompt Engineer"],
+    strings: ["Experienced in ML & DS", "Python Aficinado", "Competitive Programmer", "Full Stack Webdeveloper", "Open Source Contributor", "Tech Content Writer", "Cloud Enthusiast",],
     typeSpeed: 50,
     backSpeed: 100,
     backDelay: 1000,
