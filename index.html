@@ -1,192 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanam Shiva Kumar</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body>
-
-    <!-- NAVBAR SECTION -->
-    <header class="header">
-        <a href="#" class="logo">My Portfolio</a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Skills</a>
-            <a href="#portfolio">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiva's | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="./index.html"
+              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+            >
+              <img
+                src="./Images/me.jpg"
+                alt="mdo"
+                width="30"
+                height="30"
+                class="rounded-circle"
+              />
+              Shiva
+            </a>
+            <ul
+              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            >
+              <li>
+                <a href="#About" class="nav-link text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-workspace"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                    />
+                    <path
+                      d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"
+                    />
+                  </svg>
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="#Projects" class="nav-link text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-speedometer2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"
+                    />
+                  </svg>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#Skills" class="nav-link text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-code-slash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                    />
+                  </svg>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#Connect" class="nav-link text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-fill-add"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
+                    />
+                    <path
+                      d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"
+                    />
+                  </svg>
+                  Connect
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!-- HOME SECTION  -->
-    <section class="home" id="home">
+    <section class="About" id="About">
+      <div class="home">
         <div class="home-content">
-            <h3>Hello I'm</h3>
-            <h1>Vanam Shiva Kumar</h1>
-            <h3>And I'm good at <span class="multiple-text">AI Engineer</span></h3>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/vanam-shiva-kumar-0445281b7/" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/VANAM-SHIVA-KUMAR" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://twitter.com/@ShivaVanam7" target="_blank"><i class='bx bxl-twitter'></i></a>
-                <a href="https://medium.com/@shivakumarvanam27" target="_blank"><i class='bx bxl-blogger'></i></a>
-                <a href="shivakumarvanam27@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
-            </div>
-            <a href="https://drive.google.com/file/d/1X07MFOuXEIoZwahtlw90a2ftkWRRhwg7/view" target="_blank"
-                class="btn">Download Resume</a>
-            <a href="#contact" class="btn hire-btn">Hire Me</a>
+          <h4>Hello I'm</h4>
+          <h3>Shiva Kumar Vanam</h3>
+          <h4>
+            And I'm good at
+            <span class="multiple-text">FrontEnd Development</span>
+          </h4>
         </div>
-
         <div class="home-img">
-            <img src="images/home.jpg" alt="Vanam Shiva Kumar">
+          <img
+            src="./Images/me.jpg"
+            alt="Profile pic"
+            height="300px"
+            style="border-radius: 50%"
+          />
         </div>
+      </div>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/vanam-shiva-kumar-0445281b7/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="rgb(87, 199, 199)"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            />
+          </svg>
+        </a>
+        <a href="https://github.com/VANAM-SHIVA-KUMAR"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="rgb(87, 199, 199)"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
+        </a>
+        <a href="https://leetcode.com/u/shivavanam27/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="rgb(87, 199, 199)"
+            class="bi bi-code-square"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"
+            />
+          </svg>
+        </a>
+        <!-- <a href=""></a> -->
+        <button class="btn butt" onclick="resume()">Download Resume</button>
+      </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.jpg" alt="">
+    <section class="AboutMe">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-items">
+            <h1>Experience</h1>
+            <hr />
+            <h5>Data Science Intern - Infexial Software Solutions (Jan 2025 - Present)</h5>
+            <img src="./Images/infexial.png" alt="Infexial Logo" />
+            <ul>
+              <li>
+                Worked on  predictive models improving operational efficiency by 15% using Python.
+              </li>
+              <li>
+                Implemented experimental design frameworks, increasing product performance through data-driven insights.
+              </li>
+              <li>
+                Constructed Graphs, charts and other Visualizations to convey results of data analysis that act as storytelling to
+understand easily and gain more insights from data.
+              </li>
+            </ul>
+            <hr />
+            <h5>Data Science Intern - CodeClause (JUL 2024 - AUG 2024)</h5>
+            <img src="./Images/codeclause.jpg" alt="codeclause Logo" />
+            <ul>
+              <li>
+                Analysed large datasets to uncover insights, trends, and
+                patterns using Python, R, SQL and Tableau.
+              </li>
+              <li>
+                Implemented supervised and unsupervised learning algorithms for
+                classification tasks including clustering and anomaly detection.
+              </li>
+              <li>
+                Conducted data analysis on 10,000+ user reviews and 50,000+
+                ratings to identify key features for the recommendation
+                algorithm; achieved 90% accuracy in predicting user preferences.
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-item carousel-items">
+            <h1>Education</h1>
+            <hr />
+            <h3>SR University - (2021-2025)</h3>
+            <img src="./Images/sru.jpg" alt="sruniversity-logo" />
+            <ul>
+              <li>Bachelor of Technology in Computer Science</li>
+              <li>CGPA : 7.65/10</li>
+              <li>
+                <ul>
+                  <h6>Course Works</h6>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Operating System</li>
+                  <li>Database Management Systems</li>
+                  <li>Computer Networks</li>
+                  <li>Artificial Intelligence & Machine Learning</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="about-content">
-            <h2 class="heading"><span>About Me</span></h2>
-            <p>I am a <span>Jr AI Engineer</span> with more than <span>4+ years</span> of experience in the field of AI, Computer Vision, NLP, Deep Learning, Data Science and Machine Learning.
-            </p> 
-            <p>I am a Tech enthusiast with a focus on AI. I explore <span>ML, DL, CV, GenAI, Data, and NLP</span> to build intelligent solutions. I possess lots of hands-on experience in the broader field of AI. Passionate about leveraging technology to create impactful solutions.</p> 
-            <p>Dive into my portfolio to see my work!</p>
-            <a href="https://drive.google.com/file/d/1X07MFOuXEIoZwahtlw90a2ftkWRRhwg7/view" target="_blank"
-                class="btn">Download Resume</a>
-        </div>
+      </div>
     </section>
-
-    <!-- SERVICES SECTION -->
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-globe'></i>
-                <h3>Software Engineer-LLM AI Trainer</h3>
-                <p>I have a strong proficiency in solving complex coding problems, leveraging advanced algorithms and optimization
-                    techniques to deliver efficient, scalable solutions.. Wrote test cases to confirm code works efficiently and effectively,
-                    human-readable summaries of coding problems, and explanations of how code can solve problems and why the approach is sound. 
-                </p>
-                <a href="https://outlier.ai/" target="blank" class="btn services-btn">My Company</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Python - DSA</h3>
-                <p>I possess extensive experience and proficiency as a programmer in Python, having successfully worked on
-                    numerous projects and developed strong problem-solving capabilities. Additionally, my solid
-                    foundation in Data Structures and Algorithms enables me to optimize the efficiency and performance
-                    of my code.
-                </p>
-                <a href="https://leetcode.com/shivavanam27/" target="blank" class="btn services-btn">My Coding
-                    Profile</a>
-            </div>
-            
-            <div class="services-box">
-                <i class='bx bx-globe'></i>
-                <h3>Web Development</h3>
-                <p>I am a highly skilled MERN-Stack Web developer, My expertise lies in building WebApps and Websites
-                    utilizing the MERN (MongoDB, Express.js, React.js, Node.js) Stack, which enables me to create robust
-                    and dynamic online platforms.
-                </p>
-                <a href="#portfolio" class="btn services-btn">My Projects</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxs-edit-alt'></i>
-                <h3>Technical Content Writer</h3>
-                <p>I am adept at technical content writing, where I excel in effectively communicating complex concepts
-                    to a diverse audience. I possess the ability to break down intricate technical topics into easily
-                    understandable and engaging content, ensuring clarity and coherence.
-                </p>
-                <a href="https://medium.com/@shivakumarvanam27" target="blank" class="btn services-btn">My Blog</a>
-            </div>
-        </div>
+    <hr />
+    <!-- SKILL SECTION -->
+    <section id="Skills" class="Skills-section">
+      <div class="heading"><h1>Skills</h1></div>
+      <h3>Programming Languages</h3>
+      <ul>
+        <li><img src="./Images/web.jpg" alt="" /></li>
+        <li><img src="./Images/python.png" alt="" /></li>
+        <li><img src="./Images/java.jpg" alt="" /></li>
+        <li><img src="./Images/clang.jpg" alt="" /></li>
+      </ul>
+      <h3>FrameWorks</h3>
+      <ul>
+        <li><img src="./Images/flask.jpg" alt="" /></li>
+        <li><img src="./Images/react.jpg" alt="" /></li>
+        <li><img src="./Images/git.jpg" alt="" /></li>
+      </ul>
+      <h3>Data Bases</h3>
+      <ul>
+        <li><img src="./Images/mysql.png" alt="" /></li>
+        <li><img src="./Images/oracle.jpg" alt="" /></li>
+      </ul>
+      <h3>Data Visualizations</h3>
+      <ul>
+        <li><img src="./Images/power BI2.png" alt="" /></li>
+        <li><img src="./Images/tableau.jpg" alt="" /></li>
+      </ul>
+      <h3>Domain Knowledge</h3>
+      <ul>
+        <li><img src="./Images/ml.png" alt="" /></li>
+        <li><img src="./Images/DS.jpg" alt="" /></li>
+        <li><img src="./Images/azure.png" alt="" /></li>
+      </ul>
     </section>
-
+    <hr />
     <!-- PROJECTS SECTION -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img class="project-img" src="images/phoenix.JPG" alt="P.H.O.E.N.I.X Python Voice Assistant">
-                <div class="portfolio-layer">
-                    <h4>P.H.O.E.N.I.X Python Voice Assistant</h4>
-                    <p>"A Python-based voice assistant that smartly automates task and do what you say."</p>
-                    <a href="https://vanam-shiva-kumar.github.io/PHOENIX-Python-Voice-Assistant" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img class="project-img" src="images/quitforgood.jpg" alt="Quit For Good">
-                <div class="portfolio-layer">
-                    <h4>QUIT FOR GOOD</h4>
-                    <p>Smoking Awareness NGO Website and designed a QUIT Smoking PLAN</p>
-                    <a href="https://vanam-shiva-kumar.github.io/Quite-For-Good" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img class="project-img" src="images/crop.jpg" alt="Crop Disease Identification">
-                <div class="portfolio-layer">
-                    <h4>Crop Disease Identification</h4>
-                    <p>It ensures early, accurate disease detection and diagnosis for effective treatments,
-                        enhancing crop yield and quality while promoting sustainable agricultural practices.</p>
-                    <a href="https://github.com/VANAM-SHIVA-KUMAR/CODECLAUSE-Data-Science/tree/main/Crop%20Disease%20Identification" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-                </div>
-            </div>
+    <section class="Projects-section" id="Projects">
+      <div class="heading"><h1>Projects</h1></div>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active project-items"
+            data-bs-interval="10000"
+          >
+            <h3>Movie Recommendation System</h3>
+            <img src="./Images/movie.png" alt=" Movie Recommendation System" />
+            <p>
+              This project is a movie recommendation system based on popularity.
+              It recommends movies to users based on their popularity among all
+              users. The Popularity-based Movie Recommendation system works by
+              identifying the most popular movies based on their ratings and
+              recommending them to users. The popularity of a movie is
+              determined by the number of ratings it has received from users.
+              The project utilizes a dataset that contains movie ratings
+              provided by users. Each rating consists of the movie ID, user ID,
+              and the rating value. The project focuses on analyzing the
+              popularity of movies and generating recommendations based on their
+              popularity.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Tools: Machine Learning Algorithms, Power BI</li>
+              <li>Programming Languages : Python</li>
+              <li>IDE - Jupyter NoteBook</li>
+            </ul>
+            <button class="btn butt butt2" onclick="movie()">
+              Project Code
+            </button>
+            <button class="btn butt butt2" onclick="movieLive()">
+              Live Demo
+            </button>
+          </div>
+          <div class="carousel-item project-items">
+            <h3>Iris Flower classification System</h3>
+            <img src="./Images/iris.png" alt="Iris Flower Detection System" />
+            <p>
+              Iris Classification aims to classify Iris flowers into different
+              species based on their sepal and petal measurements. It utilizes
+              the popular Iris dataset, which contains measurements of four
+              features (sepal length, sepal width, petal length, and petal
+              width) for three different Iris species (Setosa, Versicolor, and
+              Virginica). The dataset consists of 150 samples, with each sample
+              having four feature values and a corresponding target label.
+              Several classification models are implemented in this project to
+              classify the Iris flowers: Decision Tree Classifier Random Forest
+              Classifier K-Nearest Neighbors (KNN) Classifier Support Vector
+              Machines (SVM) Classifier Gradient Boosting Classifier The models
+              are trained using the Iris dataset and evaluated using various
+              evaluation metrics such as accuracy, precision, recall, and
+              F1-score.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Tools: Machine Learning Algorithms, Power BI</li>
+              <li>Programming Languages : Python</li>
+              <li>IDE - Jupyter NoteBook</li>
+            </ul>
+            <button class="btn butt butt2" onclick="iris()">
+              Project Code
+            </button>
+            <button class="btn butt butt2" onclick="irisLive()">
+              Live Demo
+            </button>
+          </div>
+          <div class="carousel-item project-items">
+            <h3>Smart AI Voice Assistant</h3>
+            <img src="./Images/phoenix.gif" alt="Smart AI Voice Assistant" />
+            <p>
+              The aim of this project is to introduce PHOENIX AI Python Assistant, an innovative artificial intelligence (AI) tool that will automate tasks, provide support, and simplify processes. A Python-based voice assistant that can greet you and perform a variety of tasks, including searching the web, opening social media, and creating a to-do list and much more to play with the amazing features. The AI assistant will automate tasks, provide support, and simplify processes, freeing up valuable time and improving efficiency.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Tools: Machine Learning Algorithms, Python Libraries</li>
+              <li>Programming Languages : Python</li>
+              <li>IDE - Visual Studio Code</li>
+            </ul>
+            <button class="btn butt butt2" onclick="Smart()">
+              Project Code
+            </button>
+            <button class="btn butt butt2" onclick="SmartLive()">
+              Live Demo
+            </button>
+          </div>
+          <div class="carousel-item project-items">
+            <h3>Handwritten Digits Recognition</h3>
+            <img
+              src="./Images/handwritten.png"
+              alt="Handwritten Digits Recognition"
+            />
+            <p>
+              Handwritten digit recognition using MNIST dataset is a major
+              project made with the help of Neural Network. It basically detects
+              the scanned images of handwritten digits. The MNIST handwritten
+              digit classification problem is a standard dataset used in
+              computer vision and deep learning. Although the dataset is
+              effectively solved, it can be used as the basis for learning and
+              practicing how to develop, evaluate, and use convolutional deep
+              learning neural networks for image classification from scratch.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Tools: Machine Learning Algorithms, Power BI</li>
+              <li>Programming Languages : Python</li>
+              <li>IDE - Google Colab</li>
+            </ul>
+            <button class="btn butt butt2" onclick="hand()">
+              Project Code
+            </button>
+          </div>
+          <div class="carousel-item project-items">
+            <h3>Quite For Good</h3>
+            <img src="./Images/good.jpg" alt="Quite For Good" />
+            <p>
+              An NGO website - QUIT FOR GOOD aimed at helping individuals quit smoking. This website offers a variety of resources, including information on the dangers of smoking, tips on how to quit, and support groups for individuals who are trying to quit.
+Please visit website and take a look around. If you or someone you know is struggling with smoking, we encourage you to reach out and utilize the resources available on website.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Tools: HTML, CSS, Java Script</li>
+              <li>IDE - Visual Studio Code</li>
+            </ul>
+            <button class="btn butt butt2" onclick="good()">
+              Project Code
+            </button>
+            <button class="btn butt butt2" onclick="Live()">
+              Live Demo
+            </button>
+          </div>
+          <div class="carousel-item project-items">
+            <h3>Tasty Plate</h3>
+            <img src="./Images/tastyplate.png" alt="Tasty Plate" />
+            <p>
+              Cooking is not only a work but also an art. It is not confined to
+              anything it can be learnt by anyone who definitely wants to and
+              that is only possible when you have a right guide to help you
+              learn it. Welcome to Tasty Plate, our website provides you a
+              platform to learn and cook popular cuisines across all countries.
+              We provide a beginner friendly cooking processes that helps you to
+              learn making your favourite dish.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Languages : HTML, CSS, Java Script</li>
+              <li>IDE - Visual Studio Code</li>
+            </ul>
+            <button class="btn butt butt2" onclick="tastyPlate()">
+              Project Code
+            </button>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <hr />
+    <section id="Connect" class="Connect-section">
+      <h1>Connect</h1>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/vanam-shiva-kumar-0445281b7/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="blue"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            />
+          </svg>
+        </a>
+        <a href="https://github.com/VANAM-SHIVA-KUMAR"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="purple"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
+        </a>
+        <a href="https://leetcode.com/shivavanam27/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="yellow"
+            class="bi bi-code-square"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"
+            />
+          </svg>
+        </a>
+        <a href="https://wa.me/+919000773888"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="rgb(87, 199, 0)"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+            />
+          </svg>
+        </a>
+        <a href="mailto:shivakumarvanam27@gmail.com"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="red"
+            class="bi bi-envelope-at-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+            />
+            <path
+              d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-        <h2 class="heading"><i class='bx bxs-contact'></i> Contact <span>Me</span></h2>
-
-        <form action="mailto:shivakumarvanam27@gmail.com" method="post" enctype="text/plain">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- FOOTER SECTION -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Made with ❤️ Vanam Shiva Kumar </p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,61 +1,98 @@
-/* TOGGLE ICON NAVBAR */
-let menuIcon=document.querySelector('#menu-icon');
-let navbar=document.querySelector('.navbar');
+var typed = new Typed(".multiple-text", {
+  strings: [
+    "FrontEnd Development ",
+    "Backend Development",
+    "Machine Learning",
+    "Data Science",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    document.querySelectorAll(".Projects-section").forEach(function (section) {
+      if (isElementInViewport(section)) {
+        section.classList.remove("animated");
+      } else {
+        section.classList.add("animated");
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    document.querySelectorAll(".AboutMe").forEach(function (section) {
+      if (isElementInViewport(section)) {
+        section.classList.remove("animated");
+      } else {
+        section.classList.add("animated");
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    document.querySelectorAll(".Skills-section").forEach(function (section) {
+      if (isElementInViewport(section)) {
+        section.classList.remove("animated");
+      } else {
+        section.classList.add("animated");
+      }
+    });
+  });
+});
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
 
-/* SCROLL SECTION ACTIVATION LINK */
-let section = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header nav a');
+function movie() {
+  open("https://github.com/VANAM-SHIVA-KUMAR/Movie_Recommendation");
+}
+function movieLive() {
+  open("https://movie-recommendation-system-1950-2016.onrender.com/?");
+}
+function iris() {
+  open("https://github.com/VANAM-SHIVA-KUMAR/Iris_Classification");
+}
+function irisLive() {
+  open("https://shivakumar.pythonanywhere.com/?");
+}
+function Smart() {
+  open("https://github.com/VANAM-SHIVA-KUMAR/PHOENIX-Python-Voice-Assistant");
+}
+function SmartLive() {
+  open("https://vanam-shiva-kumar.github.io/PHOENIX-Python-Voice-Assistant");
+}
+function hand() {
+  open("https://github.com/VANAM-SHIVA-KUMAR/HandWrittenDigits_Classification");
+}
+function good() {
+  open("https://github.com/VANAM-SHIVA-KUMAR/Quite-For-Good");
+}
+function goodLive() {
+  open("https://vanam-shiva-kumar.github.io/Quit-For-Good");
+}
+function tastyPlate() {
+  open("https://github.com/VANAM-SHIVA-KUMAR/Tasty_Plate");
+}
 
-window.onscroll = () => {
-    SpeechRecognitionResult.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let  id = sec.getAttribute('id');
-
-        if(top>=offset && top<offset+height){
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelectorAll('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
-
-/* STICKY NAVBAR */
-let header = document.querySelector('header');
-header.classList.toggle('sticky', window.scrollY>100);
-
-/* REMOVE TOGGLE ICON AND NAVBAR WHEN NAVBAR CLICKED */
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-};
-
-
-/* SCROLL REVEAL ANIMATION */
-ScrollReveal({
-    //reset: true, 
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
-
-ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
-
-
-/* TYPE TEXT ANIMATION */
-var typed = new Typed('.multiple-text', {
-    strings: ["Machine Learning", "Data Science", "Frontend development", "Backend development", "Competitive Programmer", "Open Source Contributor", "Tech Content Writer"],
-    typeSpeed: 50,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-  });
+function resume() {
+  open(
+    "https://drive.google.com/file/d/1X07MFOuXEIoZwahtlw90a2ftkWRRhwg7/view"
+  );
+}
